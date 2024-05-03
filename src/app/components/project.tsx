@@ -20,7 +20,7 @@ const projects: Data[] = [
         projectName: "CRUD API for Animal Grooming Services with Typescript",
         desc: "Building RESTful API for animal grooming services with TypeScript and Express.js. Leveraging Prisma ORM and MySQL, ensuring efficient database management. Implement JWT for secure authentication and Zod with data validation.",
         link: "https://github.com/egrizq/animal-grooming/blob/master/README.md",
-        requirement: "Typescript | MySQL | Express.js |Prisma | Zod"
+        requirement: "Typescript | MySQL | Express.js | Prisma | Zod"
     },
     {
         projectName: "Text Summarization with Hugging Face Model",
