@@ -1,27 +1,27 @@
 export default function Home() {
   return (
     <>
-    <main className="container mx-auto">
+    <main className="container mx-auto font-mono">
         <div className="flex">
 
             <div className="flex w-8/12">
                 <div className="flex h-screen items-center justify-start pl-16">
                     <div className="flex flex-col space-y-5">
-                        <div className="flex flex-col sm:text-4xl md:text-4xl xl:text-5xl space-y-1">
-                            <div>
-                                <span className="pr-1">
-                                    Hi, my name is     
-                                </span>
-                                <span className="bg-gradient-to-t from-green-500 to-50% rounded-md px-2 py-1">
-                                    Rizq Ramadhan
-                                </span>
-                            </div>
-                            <p>I'm a Back-End Developer,</p>
-                            <p>Student and Cat Lover.</p>
+                    <div className="flex flex-col sm:text-lg md:text-2xl xl:text-4xl">
+                        <div className="flex items-center space-x-1">
+                            <span>Hi, my name is</span>
+                            <span className="bg-gradient-to-t from-green-500 to-50% rounded-md px-2 py-1">
+                                Rizq Ramadhan
+                            </span>
                         </div>
+                        <p className="my-1">I'm a Back-End Developer,</p>
+                        <p className="my-1">Student and Cat Lover.</p>
+                    </div>
 
                         <div className="flex text-xl">
-                            <a href="/CV_Muhammad Rizq Ramadhan.pdf" className="border-b pb-1 hover:text-green-500" download>
+                            <a href="/CV_Muhammad Rizq Ramadhan.pdf" 
+                                className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px]
+                                 after:bg-green-500 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" download>
                                 Resume
                             </a>
                         </div>
