@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
     return (
         <>
@@ -32,10 +34,10 @@ export default function Home() {
                     <div className="flex w-4/12 flex-col">
                         <div className="flex justify-end">
                             <div className="flex pr-16 pt-10">
-                                <a href="/projects"
+                                <Link href="/projects"
                                     className="p-2 border border-white rounded-md hover:text-black hover:bg-white">
                                     <span className="text-xl">Projects</span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -45,14 +47,13 @@ export default function Home() {
 
                                     <div className="flex items-center">
                                         <a href="https://medium.com/@rizq.ramadhan17">
-                                            <img src="medium.jpg"
-                                                alt="Medium icon" width="55" height="auto" />
+                                            <img src="medium.png" alt="Medium icon" width="55" height="auto" />
                                         </a>
                                     </div>
 
                                     <div className="flex items-center">
                                         <a href="https://www.linkedin.com/in/muhammad-rizq-ramadhan-031a1a1ba/">
-                                            <div className="py-1 px-2 border-white border-2 rounded-md hover:text-black hover:bg-white">
+                                            <div className="py-1 px-2 border-white border-2 rounded-md">
                                                 <span>In</span>
                                             </div>
                                         </a>
@@ -60,8 +61,7 @@ export default function Home() {
 
                                     <div className="flex">
                                         <a href="https://github.com/egrizq">
-                                            <img src="github.jpg"
-                                                alt="Github icon" width="55" height="auto" />
+                                            <img src="git.png" alt="Github icon" width="55" height="auto" />
                                         </a>
                                     </div>
                                 </div>

@@ -1,4 +1,5 @@
 import ProjectList from "../components/project";
+import Link from 'next/link';
 
 export default function Project() {
 
@@ -12,9 +13,9 @@ export default function Project() {
                         <ProjectList />
 
                         <div className="sm:text-sm md:text-xl text-end">
-                            <a href="/" className="hover:text-green-500">
+                            <Link href="/" className="hover:text-green-500">
                                 Back
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
