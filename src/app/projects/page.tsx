@@ -8,7 +8,7 @@ export default function Project() {
             <main className="container mx-auto">
                 <div className="flex justify-center py-10">
                     <div className="flex flex-col w-6/12 space-y-5">
-                        <span className="text-3xl text-center pb-6">Projects</span>
+                        <span className="text-3xl text-center pb-5">Projects</span>
 
                         <ProjectList />
 

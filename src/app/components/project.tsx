@@ -50,10 +50,10 @@ const projects: Data[] = [
 
 const FadeIn = ({ delay, children }: any) => (
     <Transition.Child
-        enter={`transition-all ease-in-out duration-700 ${delay}`}
-        enterFrom="opacity-0 translate-y-6"
-        enterTo="opacity-100 translate-y-0"
-        leave="transition-all ease-in-out duration-300"
+        enter={`transition-opacity duration-700 ${delay}`}
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-620"
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
     >
@@ -74,7 +74,7 @@ const ProjectItem = ({ data }: { data: Data }) => {
             </button>
             <Transition.Root show={show}>
                 <FadeIn delay="delay-[0ms]">
-                    <div className="text-md italic pb-3">
+                    <div className="text-md pb-3">
                         <p>{data.desc}</p>
                     </div>
 
