@@ -41,7 +41,7 @@ const projects: Data[] = [
         requirement: "Python | Pandas | Numpy | Matplotlib | Seaborn"
     },
     {
-        projectName: "Sentiment Analysis for Batik Air Airways",
+        projectName: "Sentiment Analysis Batik Air Airways",
         desc: "Implemented web scraping to collect the reviews. Utilized the Vader Sentiment for in-depth sentiment analysis and visualization through Word Cloud",
         link: "https://github.com/egrizq/batik_air/blob/main/batik_air_reviews.ipynb",
         requirement: "Python | Beautiful Soup | Vader Sentiment | Seaborn"
@@ -50,10 +50,10 @@ const projects: Data[] = [
 
 const FadeIn = ({ delay, children }: any) => (
     <Transition.Child
-        enter={`transition-opacity duration-700 ${delay}`}
+        enter={`transition-opacity ease-in duration-700 ${delay}`}
         enterFrom="opacity-0"
         enterTo="opacity-100"
-        leave="transition-opacity duration-620"
+        leave="transition-opacity ease-in duration-620"
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
     >
@@ -67,7 +67,7 @@ const ProjectItem = ({ data }: { data: Data }) => {
     return (
         <div className="border-b pb-2">
             <button
-                className="text-lg font-bold italic pb-3 hover:text-green-500"
+                className="sm:text-md lg:text-lg font-bold italic pb-3 hover:text-green-500"
                 onClick={() => setShow(!show)}
             >
                 {data.projectName}

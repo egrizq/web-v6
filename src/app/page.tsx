@@ -3,9 +3,8 @@ import Link from 'next/link';
 export default function Home() {
     return (
         <>
-            <main className="container mx-auto font-mono">
+            <main className="container mx-auto">
                 <div className="flex">
-
                     <div className="flex w-8/12">
                         <div className="flex h-screen items-center justify-start pl-16">
                             <div className="flex flex-col space-y-5">
@@ -46,21 +45,21 @@ export default function Home() {
                                 <div className="flex flex-rows space-x-4  text-xl">
 
                                     <div className="flex items-center">
-                                        <a href="https://medium.com/@rizq.ramadhan17">
+                                        <a href="https://medium.com/@rizq.ramadhan17" className='hover:scale-125 ease-in duration-150'>
                                             <img src="medium.png" alt="Medium icon" width="55" height="auto" />
                                         </a>
                                     </div>
 
                                     <div className="flex items-center">
                                         <a href="https://www.linkedin.com/in/muhammad-rizq-ramadhan-031a1a1ba/">
-                                            <div className="py-1 px-2 border-white border-2 rounded-md">
+                                            <div className="py-1 px-2 hover:scale-125 ease-in duration-150 border-white border-2 rounded-md">
                                                 <span>In</span>
                                             </div>
                                         </a>
                                     </div>
 
                                     <div className="flex">
-                                        <a href="https://github.com/egrizq">
+                                        <a href="https://github.com/egrizq" className='hover:scale-125 ease-in duration-150'>
                                             <img src="git.png" alt="Github icon" width="55" height="auto" />
                                         </a>
                                     </div>

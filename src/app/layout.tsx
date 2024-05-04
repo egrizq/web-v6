@@ -14,7 +14,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={"text-white font-mono bg-gradient-to-tr from-neutral-700 to-slate-700"}>{children}</body>
+            <body className={"m-0 p-0 text-white font-mono bg-black"}>
+                {children}
+            </body>
         </html>
     );
 }
